@@ -1,0 +1,50 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "GeneradorHashed",
+      "request": "launch",
+      "mainClass": "com.gamestore.GeneradorHashed",
+      "projectName": "GameStorePE-backend"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GameStorePeBackendApplication<GameStorePE-backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.GameStorePE.GameStorePeBackendApplication",
+      "projectName": "GameStorePE-backend",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Jhordy/Documents/ProyectoWeb/GameStoreWeb",
+      "program": "c:/Users/Jhordy/Documents/ProyectoWeb/GameStoreWeb/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GameStorePeBackendApplication<GameStorePE-backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.gamestore.GameStorePeBackendApplication",
+      "projectName": "GameStorePE-backend",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
