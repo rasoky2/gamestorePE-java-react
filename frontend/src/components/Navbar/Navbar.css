@@ -1,0 +1,190 @@
+.navbar {
+  background: linear-gradient(to bottom, #171a21 0%, #1b2838 100%);
+  color: #c5c3c0;
+  height: 64px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  color: #c5c3c0;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-balance {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.nav-button {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.login {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.register {
+  color: #ffffff;
+  background-color: #5c7e10;
+}
+
+.register:hover {
+  background-color: #739b0f;
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-left {
+    gap: 24px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .user-balance {
+    font-size: 13px;
+  }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .navbar-right {
+    gap: 12px;
+  }
+
+  .user-balance {
+    display: none;
+  }
+
+  .username {
+    display: none;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 16px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .nav-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .avatar {
+    width: 28px;
+    height: 28px;
+  }
+}

@@ -1,0 +1,150 @@
+.biblioteca-container {
+  max-width: 1200px;
+  margin: 84px auto 40px;
+  padding: 0 24px;
+}
+
+.biblioteca-header {
+  margin-bottom: 32px;
+}
+
+.biblioteca-header h1 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-buttons button {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #c5c3c0;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.filter-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.filter-buttons button.active {
+  background-color: #1a9fff;
+  color: #ffffff;
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.game-item:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.game-image {
+  width: 184px;
+  height: 69px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-info h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.last-played,
+.play-time {
+  color: #8f98a0;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.game-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.play-button,
+.download-button {
+  padding: 8px 24px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.play-button {
+  background-color: #5c7e10;
+  color: #ffffff;
+}
+
+.play-button:hover {
+  background-color: #739b0f;
+}
+
+.download-button {
+  background-color: #1a9fff;
+  color: #ffffff;
+}
+
+.download-button:hover {
+  background-color: #3dabff;
+}
+
+.empty-library {
+  text-align: center;
+  padding: 48px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.empty-library p {
+  color: #8f98a0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .biblioteca-container {
+    margin-top: 64px;
+  }
+
+  .game-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .game-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

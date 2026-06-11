@@ -1,0 +1,44 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Spring Boot",
+			"type": "shell",
+			"command": "./mvnw spring-boot:run",
+			"args": [
+				"spring-boot:run"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Tarea para ejecutar Spring Boot"
+		},
+		{
+			"label": "Run React App",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"start"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/gamestorepe-frontend"
+			},
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "Tarea para ejecutar la aplicación React"
+		},
+		{
+			"label": "Run All",
+			"dependsOn": [
+				"Run Spring Boot",
+				"Run React App"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Tarea para ejecutar ambas aplicaciones"
+		}
+	]
+  }
+  
